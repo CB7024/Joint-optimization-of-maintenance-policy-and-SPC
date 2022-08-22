@@ -1,0 +1,11 @@
+H=6;
+L=5;
+k=0.5;
+n1=2;
+n2=6;
+[ARL0,ARL1]=ARLCompute(H,k,n1,n2);
+ARL1=real(ARL1);
+ARL1=abs(ARL1);
+mm=1-1/ARL1;
+[ARL02,ARL12]=ARLCompute(L,k,n1,n2);
+pp=ARL02/ARL0;
